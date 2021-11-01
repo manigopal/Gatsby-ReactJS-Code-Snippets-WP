@@ -21,10 +21,10 @@ const sliderParams = {
   centeredSlides: true,
 }
 
-const HeroBanner1 = () => {
+const SwiperHeroBanner = () => {
   const {
     wpPage: { ACF_HomePage: data },
-  } = useHeroBannerQuery1()
+  } = useSwiperHeroBannerQuery()
 
 const imageData1 = getImage(data.herobanner1image.localfile)
 const imageData2 = getImage(data.herobanner2image.localfile)
@@ -56,4 +56,4 @@ const imageData3 = getImage(data.herobanner3image.localfile)
   )
 }
 
-export default HeroBanner1
+export default SwiperHeroBanner
